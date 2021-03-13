@@ -2,19 +2,7 @@
 const a = '```'
 const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal, groupName, premi, Simihh, Welcomee, ModeAnime, Nsfww, BadWordd, AntiLinkk, AntiVirtexx) => { 
 	return `
-	
-${a}Follow My Instagram${a}
-${instagram}
-
-
-
-
-${a}My Youtube${a}
-${yt}
-
-${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
-
-╭─────≽「 *REGULATION ${name}* 」
+╭─────≽「 *USER INFO* 」
 ┴
 ┣⊱>  ${a}NAMA USER:${a} *${pushname2}*
 ┣⊱>  ${a}CEK PREMIUM:${a} ${premi}
@@ -37,81 +25,102 @@ ${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
 ┬
 ╰────────────────────────
 
-╭─────≽「 *ABOUT ${name}* 」
+╭─────≽「 *ABOUT NEKO•BOT* 」
 ┴
 ┠─≽ *${prefix}mutualan*
 │ ${a}Random Teman Chat${a}
+│
 ┠─≽ *${prefix}report lapor bug*
 │ ${a}Untuk Melaporkan Bug Ke Owner${a}
+│
 ┠─≽ *${prefix}info*
 │ ${a}Untuk Menampilkan Info Bot${a}
+│
 ┠─≽ *${prefix}donasi*
 │ ${a}Jika Berkenan Untuk Donasi${a}
+│
 ┠─≽ *${prefix}owner*
 │ ${a}Bot Mengirimkan Nomer Owner${a}
+│
 ┠─≽ *${prefix}speed*
 │ ${a}Twsting Respon Bot${a}
+│
 ┠─≽ *${prefix}daftar*
 │ ${a}Untuk Mendaftar Yg Belom Terdaftar${a}
+│
 ┠─≽ *${prefix}limit*
 │ ${a}Untuk Cek Limit Anda${a}
+│
 ┠─≽ *${prefix}blocklist*
 │ ${a}Check Kontak Kontak Yg Diblock${a}
+│
 ┠─≽ *${prefix}banlist*
 │ ${a}Check Kontak Yg Dibanned${a}
+│
 ┠─≽ *${prefix}premiumlist*
 │ ${a}Menampilkan list user premium${a}
+│
 ┠─≽ *${prefix}bahasa*
 │ ${a}Untuk Fitur text to speech${a}
+│
 ┠─≽ *${prefix}wame*
 │ ${a}Create Link Nomer WA Anda${a}
+│
 ┠─≽ *${prefix}cekpremium*
 │ ${a}Check expired title premium anda${a}
+│
 ┠─≽ *${prefix}listbadword*
 │ ${a}mengirimkan list badword${a}
 ┬
 ╰────────────────────────
 
-╭──≽「 *FITUR SIMPLE ${name}* 」
+╭──≽「 *FITUR SIMPLE NEKO•BOT* 」
 ┴
 ┠─≽ *${prefix}menucreator*
 │ ${a}Fitur Image Maker${a}
+│
 ┠─≽ *${prefix}menumedia*
 │ ${a}Fitur Stalking & Downloader${a}
+│
 ┠─≽ *${prefix}menugrup*
 │ ${a}Fitur Khusus Di group${a}
+│
 ┠─≽ *${prefix}menuothers*
 │ ${a}Fitur Random${a}
+│
 ┠─≽ *${prefix}menuprimbon*
 │ ${a}Fitur primbon Jodoh, DLL${a}
+│
 ┠─≽ *${prefix}menuinformasi*
 │ ${a}Fitur Informasi cuaca, DLL${a}
+│
 ┠─≽ *${prefix}menufun*
 │ ${a}Fitur Untuk Game Bersama Teman${a}
+│
 ┠─≽ *${prefix}menuscrapper*
 │ ${a}Fitur scrapper${a}
+│
 ┠─≽ *${prefix}menuencrypt*
 │ ${a}Fitur Encrypt & Decrypt${a}
+│
 ┠─≽ *${prefix}menuspam*
 │ ${a}Fitur Spam${a}
+│
 ┠─≽ *${prefix}menupremium*
 │ ${a}Fitur Untuk User Premium${a}
+│
 ┠─≽ *${prefix}menuowner*
 │ ${a}Fitur Khusus Owner${a}
 ┬
 ╰────────────────────────
 
-╭────≽「 *SUPPORT ${name}* 」
+╭────≽「 🙌 *SUPPORTER* 」
 ┴
-│➲ ${a}O BOT${a}
-│➲ ${a}M. HADI FIRMANSYA${a}
-│➲ ${a}DELIA AULIA${a}
-│➲ ${a}KEVIN DAVID${a}
-│➲ ${a}MY TEAM FXC7 BOT${a}
-│➲ ${a}PENYEDIA REST API${a}
-│➲ ${a}CONTENT CREATOR BOT WHATSAPP${a}
+│➲ ${a}Cyda${a}
+│➲ ${a}Nicholas Nugraha${a}
+│➲ ${a}BROTHERHOOD${a}
 ┬
-╰──────≽ *Created © FXC7*`
+╰──────≽ *Created © NEKO•BOT*`
 }
 
 exports.help = help
@@ -130,10 +139,8 @@ function kyun(seconds){
 // info bot 
 const bottt = (prefix) => {
 return `
-${a}Untuk Sekarang Bot Hanya Bisa Digunakan Di Group Karna,${a} \n*Kalian Yang Menggunakan Bot Terlalu Spam*
-
 *NOTE:*
-Jika Bot Ini Ada Di Grup Anda Admin Grup Suruh Aktifkan Bot Dengan Cara ${prefix}bott aktif
+Jika Bot Ini Ada Di Grup Anda, Admin Grup Suruh Aktifkan Bot Dengan Cara *${prefix}bott aktif*
 
 *Adapun Daftar Menu Yang Di Public Sama Owner Dan Bisa Kalian Gunakan Tanpa Di Group*
 
@@ -206,16 +213,13 @@ const donasi = (name) => {
 	return `       
 ╭─≽「 *DONASI AGAR BOT TETAP ONLINE* 」
 ┴
-│✓ *Trakteer: https://trakteer.id/FarhanXCo*
-│✓ *Saweria: https://saweria.co/FarhanXCo*
-│
-│✓ ${a}Pulsa: 08311800241${a}
+│🔰 ${a}Pulsa: 085158342254${a}
 │ *15k Invite Bot Ke Grup selama 1 bulan*
 │
-│✓ ${a}OVO: 08311800241${a}
+│🔰 ${a}OVO: 085158342254${a}
 │ *10k Invite Bot Ke Group Selama 1 Bulan*
 ┬
-╰─────≽「 *BY ${name}* 」
+╰─────≽「 *BY NEKO•BOT* 」
 
 Untuk Kelangsungan Hidup Bot Karna Kuota Mahal:'
 `
@@ -405,7 +409,7 @@ exports.bahasa = bahasa
 // Limit
 const limitcount = (limitCounts) => {
         return`
-Limit Kamu: ${limitCounts}
+*Limit Kamu:* ${limitCounts}
 `
 }
 exports.limitcount = limitcount
