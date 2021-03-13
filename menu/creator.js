@@ -4,11 +4,11 @@ return `
 
 ${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
 
-╭─────≽「 *REGULATION ${name}* 」
+╭─────≽「 *INFO USER* 」
 ┴
 ┣⊱  ${a}NAMA USER:${a} *${pushname2}*
 ┣⊱  ${a}NAMA GRUP:${a} *${groupName}*
-┣⊱  ${a}VERSION:${a} *0.0.0*
+┣⊱  ${a}VERSION:${a} *1.0.0*
 ┣⊱  ${a}USER TERDAFTAR:${a} *${user.length} User*
 ┬
 ╰────────────────────────
@@ -17,86 +17,124 @@ ${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
 ┴
 ┠≽ *${prefix}quotemaker tx/wtrmk/tema*
 ├── _Example: ${prefix}quotemaker Farhan/Farhan/random_
+│
 ┠≽ *${prefix}nulis text*
 ├── _Example: ${prefix}nulis Farhan Gans_
+│
 ┠≽ *${prefix}croman TEXT dan Friend*
 ├── _Example: ${prefix}croman Farhan & Friend_
+│
 ┠≽ *${prefix}slide TEXT*
 ├── _Example: ${prefix}slide Farhan & Friend_
+│
 ┠≽ *${prefix}trigger*
 ├── _Example: reply Gambar dan caption ${prefix}trigger_
+│
 ┠≽ *${prefix}wasted*
 ├── _Example: reply Gambar dan caption ${prefix}wasted_
+│
 ┠≽ *${prefix}pelangi*
 ├── _Example: reply Gambar dan caption ${prefix}pelangi_
+│
 ┠≽ *${prefix}sepia*
 ├── _Example: reply Gambar dan caption ${prefix}sepia_
+│
 ┠≽ *${prefix}merah*
 ├── _Example: reply Gambar dan caption ${prefix}merah_
+│
 ┠≽ *${prefix}hijau*
 ├── _Example: reply Gambar dan caption ${prefix}hijau_
+│
 ┠≽ *${prefix}biru*
 ├── _Example: reply Gambar dan caption ${prefix}biru_
+│
 ┠≽ *${prefix}glass*
 ├── _Example: reply Gambar dan caption ${prefix}glass_
+│
 ├───────────────────
 ┠≽ *${prefix}listephoto*
 ├── _Example: untuk menampilkan list ephoto_
+│
 ┠≽ *${prefix}ephoto 1 - 216*
 ├── _Example: ${prefix}ephoto 5 Farhan_
+│
 ┠≽ *${prefix}listtextpro*
 ├── _Example: untuk menampilkan list text pro_
+│
 ┠≽ *${prefix}textpro 1 - 162*
 ├── _Example: ${prefix}textpro 1 Farhan_
+│
 ┠≽ *${prefix}fbgoldbutton TEXT*
 ├── _Example: ${prefix}fbgoldbutton Farhan_
+│
 ┠≽ *${prefix}tahta TEXT*
 ├── _Example: ${prefix}tahta Farhan_
+│
 ┠≽ *${prefix}cglitch TEXT/TEXT*
 ├── _Example: ${prefix}cglitch Farhan/Gans_
+│
 ┠≽ *${prefix}cglass TEXT*
 ├── _Example: ${prefix}cglass Farhan_
+│
 ┠≽ *${prefix}cballon TEXT*
 ├── _Example: ${prefix}cballon Farhan_
+│
 ┠≽ *${prefix}cstyle TEXT*
 ├── _Example: ${prefix}cstyle Farhan_
+│
 ┠≽ *${prefix}clove TEXT*
 ├── _Example: ${prefix}clove Farhan_
+│
 ┠≽ *${prefix}cparty TEXT*
 ├── _Example: ${prefix}cparty Farhan_
+│
 ┠≽ *${prefix}csky TEXT*
 ├── _Example: ${prefix}csky Farhan_
+│
 ┠≽ *${prefix}tts id TEXT*
 ├── _Example: ${prefix}tts id Farhan_
+│
 ┠≽ *${prefix}ttp TEXT*
 ├── _Example: ${prefix}ttp Farhan_
+│
 ├───────────────────
 ┠≽ *${prefix}stiker*
 ├── _Example: reply gambar dan caption ${prefix}stiker_
+│
 ┠≽ *${prefix}toimg*
 ├── _Example: reply stiker dan caption ${prefix}toimg_
+│
 ┠≽ *${prefix}tovideo*
 ├── _Example: reply video dan caption ${prefix}tovideo_
+│
 ┠≽ *${prefix}img2url*
 ├── _Example: reply gambar dan caption ${prefix}img2url_
+│
 ┠≽ *${prefix}tomp3*
 ├── _Example: reply video dan caption ${prefix}tomp3_
+│
 ┠≽ *${prefix}ocr*
 ├── _Example: reply gambar dan caption ${prefix}ocr_
+│
 ├───────────────────
 ┠≽ *${prefix}slow*
 ├── _Example: reply audio/video dan caption ${prefix}slow_
+│
 ┠≽ *${prefix}gemuk*
 ├── _Example: reply audio/video dan caption ${prefix}gemuk_
+│
 ┠≽ *${prefix}tupai*
 ├── _Example: reply audio/video dan caption ${prefix}tupai_
+│
 ┠≽ *${prefix}bass*
 ├── _Example: reply audio/video dan caption ${prefix}bass_
+│
 ┠≽ *${prefix}toptt*
 ├── _Example: reply audio/video dan caption ${prefix}toptt_
 ┬
 ╰──────────────────────────
-`
+
+⚠️ ${a}Jangan Lupa Donasi Agar BOT Aktif Terus!${a}`
 }
 exports.creator = creator
 
