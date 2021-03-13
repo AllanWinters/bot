@@ -330,7 +330,7 @@ async function starts() {
 				wait: '*⏳ ᴡᴀɪᴛ ꜱᴇᴅᴀɴɢ ᴅɪ ᴩʀᴏꜱᴇꜱ...*',
 				success: '*ꜱᴜᴋꜱᴇꜱ...*',
 				error: {
-				 bug: '*Terjadi Kesalahan Coba Hubungi Owner Untuk Melaporkan Kesalahan*',
+				 bug: '*❌ Terjadi Kesalahan\nSilahkan Hubungi Owner Untuk Melaporkan Kesalahan 🙌*',
 				stick: ' *ɢᴀɢᴀʟ, ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ꜱᴀᴀᴛ ᴍᴇɴɢᴋᴏɴᴠᴇʀꜱɪ ɢᴀᴍʙᴀʀ ᴋᴇ ꜱᴛɪᴄᴋᴇʀ*\n*ᴄᴏʙᴀ ᴜʟᴀɴɢɪ ᴅᴇɴɢᴀɴ ʀᴇᴩʟy ꜰᴏᴛᴏ yɢ ꜱᴜᴅᴀʜ ᴛᴇʀᴋɪʀɪᴍ*',
 				Iv: '*ᴍᴀᴀꜰ ʟɪɴᴋ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ!!*'
 				},
@@ -340,15 +340,15 @@ async function starts() {
 				ownerG: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴏᴡɴᴇʀ ɢʀᴏᴜᴩ!*',
 				ownerB: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴏᴡɴᴇʀ ʙᴏᴛ!* ',
 				premium: '*ᴍᴀᴀꜰ ꜰɪᴛᴜʀ ɪɴɪ ᴋʜᴜꜱᴜꜱ ᴜꜱᴇʀ ᴩʀᴇᴍɪᴜᴍ!!*',
-				userB: `Hai Kak ${pushname2} Kamu Belom Terdaftar Didatabase Silahkan Ketik \n${prefix}daftar`,
+				userB: `Hai *${pushname2}* 👋\nKamu Belom Terdaftar Didatabase, Silahkan Ketik\n*${prefix}daftar*`,
 				admin: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴀᴅᴍɪɴ ɢʀᴏᴜᴩ!*',
 				Badmin: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴋᴇᴛɪᴋᴀ ʙᴏᴛ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ!*',
 				}
 			}
 
 			const botNumber = frhan.user.jid
-			const ownerNumber = [`${OwnerNumber}@s.whatsapp.net`] // owner number ubah aja 
-			const ownerInfo = `${OwnerNumber}`
+			const ownerNumber = [`6285158342254@s.whatsapp.net`] // owner number ubah aja 
+			const ownerInfo = `6285158342254`
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await frhan.groupMetadata(from) : ''
@@ -678,7 +678,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					for (let Y of res.data) {
 						teks += `\n*「 _BRAINLY_ 」*\n\n*➸ Pertanyaan:* ${Y.pertanyaan}\n\n*➸ Jawaban:* ${Y.jawaban[0].text}\n❉───────────────────────❉\n`
 					}
-					costum(teks, text, FarhanGans, `Ciee Cari Jawaban Yaa😂\nFollow IG: @_farhan_xcode7`)
+					costum(teks, text, FarhanGans, `Ciee Cari Jawaban Yaa😂`)
 					console.log(res)
 					})
 					await limitAdd(sender)
@@ -686,7 +686,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 		case 'daftar':
 		case 'verify':
 					frhan.updatePresence(from, Presence.composing)
-					if (isUser) return reply('kamu sudah Menjadi Temen IRIENEBOT:D')
+					if (isUser) return reply('kamu sudah Menjadi Teman *NEKO•BOT*')
 					if (isBanned) return reply(mess.only.benned)
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
