@@ -2,7 +2,7 @@ const a = '```'
 const groupp = (prefix, pushname2, groupName, user, name, uptime, jam, tanggal, premi, Simihh, Welcomee, ModeAnime, Nsfww, BadWordd, AntiLinkk, AntiVirtexx) => {
 return `
 
-╭─────≽「 *REGULATION ${name}* 」
+╭─────≽「 *USER INFO* 」
 ┴
 ┣⊱>  ${a}NAMA USER:${a} *${pushname2}*
 ┣⊱>  ${a}CEK PREMIUM:${a} ${premi}
