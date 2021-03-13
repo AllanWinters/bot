@@ -1,11 +1,11 @@
 const a = '```'
 const menupremium = (prefix, pushname2, groupName, user, name, premium, premi) => {
 return `
-╭─────≽「 *REGULATION ${name}* 」
+╭─────≽「 *USER INFO* 」
 ┴
 ┣⊱  ${a}NAMA USER:${a} *${pushname2}*
 ┣⊱  ${a}NAMA GRUP:${a} *${groupName}*
-┣⊱  ${a}VERSION:${a} *0.0.0*
+┣⊱  ${a}VERSION:${a} *1.0.0*
 ┣⊱  ${a}USER PREMIUM:${a} *${premi}*
 ┣⊱  ${a}USER TERDAFTAR:${a} *${user.length} User*
 ┬
