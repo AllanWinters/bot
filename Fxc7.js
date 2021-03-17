@@ -330,9 +330,9 @@ async function starts() {
 				wait: '*⏳ ᴡᴀɪᴛ ꜱᴇᴅᴀɴɢ ᴅɪ ᴩʀᴏꜱᴇꜱ...*',
 				success: '*ꜱᴜᴋꜱᴇꜱ...*',
 				error: {
-				 bug: '*❌ Terjadi Kesalahan\nSilahkan Hubungi Owner Untuk Melaporkan Kesalahan 🙌*',
+				 bug: '*❌ Terjadi Kesalahan*\n*Silahkan Hubungi Owner Untuk Melaporkan Kesalahan 🙌*',
 				stick: ' *ɢᴀɢᴀʟ, ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ꜱᴀᴀᴛ ᴍᴇɴɢᴋᴏɴᴠᴇʀꜱɪ ɢᴀᴍʙᴀʀ ᴋᴇ ꜱᴛɪᴄᴋᴇʀ*\n*ᴄᴏʙᴀ ᴜʟᴀɴɢɪ ᴅᴇɴɢᴀɴ ʀᴇᴩʟy ꜰᴏᴛᴏ yɢ ꜱᴜᴅᴀʜ ᴛᴇʀᴋɪʀɪᴍ*',
-				Iv: '*ᴍᴀᴀꜰ ʟɪɴᴋ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ!!*'
+				Iv: '*ᴍᴀᴀꜰ ʟɪɴᴋ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ!*'
 				},
 			only: {
 				group: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴅᴀʟᴀᴍ ɢʀᴏᴜᴩ!*',
@@ -347,8 +347,8 @@ async function starts() {
 			}
 
 			const botNumber = frhan.user.jid
-			const ownerNumber = [`6285158342254@s.whatsapp.net`] // owner number ubah aja 
-			const ownerInfo = `6285158342254`
+			const ownerNumber = [`${OwnerNumber}@s.whatsapp.net`] // owner number ubah aja 
+			const ownerInfo = `${OwnerNumber}`
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await frhan.groupMetadata(from) : ''
@@ -395,7 +395,7 @@ if (isGroup) {
 		frhan.groupLeave(from) 
 		}, 2000)
 		setTimeout ( () => {
-		frhan.sendMessage(from, `Maaf Yaa Bye All👋`, text)
+		frhan.sendMessage(from, `Maaf Yaa Bye All 👋`, text)
 		}, 1000)
 		setTimeout( () => {
 		frhan.sendMessage(from, `Maaf ${name} Tidak Bisa Masuk Group Karna Member Group ${groupMetadata.subject} Tidak Memenuhi Limit Member\n\nMinimal Member ${memberLimit}`, text)
@@ -496,7 +496,7 @@ const obj = { id: sender, limit: 0 }
 			premi = '*YES PREMIUM*'
 			} 
 			if (isOwner) {
-			premi = '*UNLIMITED PREMIUM*'
+			premi = '*UNLIMITED*'
 			}
 			var Simihh = 'OFF'
 			if(isSimi) {
@@ -781,7 +781,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					me = frhan.user
 					user.push(sender)
 					uptime = process.uptime()
-					teks = `➽ *Nama Bot* : ${me.name}\n➽ *Owner Bot* : https://api.whatsapp.com/${ownerInfo}\n➽ *prefix* : | ${prefix} |\n➽ *Total Block* : ${blocked.length}\n➽ *Aktif Sejak* : ${kyun(uptime)}\n➽ *Total Pengguna* : ${user.length} User\n➽ *Instagram* : https://www.instagram.com/_farhan_xcode7\n\n➽ *Special Thanks To* :\n\n➽ Allah SWT \n➽ MhankBarBar\n➽ Nurutomo\n➽ Manurios`
+					teks = `➽ *Nama Bot:* ${me.name}\n➽ *Owner Bot:* wa.me/6285158342254\n➽ *Prefix:* | ${prefix} |\n➽ *Total Block:* ${blocked.length}\n➽ *Aktif Sejak:* ${kyun(uptime)}\n➽ *Total Pengguna:* ${user.length}\n\n\n*🙌 Special Thanks To:*\n\n➽ Allah SWT \n➽ Nicholas Nugraha\n➽ Chitandaa\n➽ BROTHERHOOD`
 					buffer = await getBuffer(me.imgUrl)
 					frhan.sendMessage(from, buffer, image, {quoted: mek, caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break 
@@ -821,7 +821,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					if (!isOwner) return reply(mess.only.ownerB)
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 			        ban = mentioned
-					reply(`berhasil banned : ${ban}`)
+					reply(`Berhasil banned: ${ban}`)
 					break
 				case 'unban':
 					if (!isOwner)return reply(mess.only.ownerB)
@@ -902,7 +902,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('081367958794', 'NekoBOT')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									await costum(fs.readFileSync(ran), sticker, FarhanGans, ` ~ Nihh Udah Jadi Stikernya`)
 									fs.unlinkSync(media)	
@@ -930,7 +930,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('081367958794', 'NekoBOT')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									await costum(fs.readFileSync(ran), sticker, FarhanGans, `~ Nih Dah Jadi Gif Stikernya`)
 									fs.unlinkSync(media)
@@ -964,7 +964,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 							})
 						})
 					} else {
-						reply(`Kirim gambar dengan caption ${prefix}sticker atau tag gambar yang sudah dikirim`)
+						reply(`Kirim gambar dengan caption ${prefix}stiker atau tag gambar yang sudah dikirim`)
 					}
 					break 
 					case 'trigger':
@@ -1235,7 +1235,6 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				await limitAdd(sender) 	
 			break 
 				case 'owner':
-				frhan.sendMessage(from, {displayname: "jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
 				reply('wa.me/628311800241')
 				break
 				
@@ -1337,7 +1336,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				if (!isGroup) return reply(mess.only.group)
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 				linkgc = await frhan.groupInviteCode (from)
-				yeh = `https://chat.whatsapp.com/${linkgc}\n\nlink Group *${groupName}*`
+				yeh = `https://chat.whatsapp.com/${linkgc}\n\nLink Group *${groupName}*`
 				frhan.sendMessage(from, yeh, text, {quoted: mek})
 				break
 				case 'hidetag':
@@ -1368,7 +1367,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					ganteng = body.slice(12)
 					const gan =['10%','30%','20%','40%','50%','60%','70%','62%','74%','83%','97%','100%','29%','94%','75%','82%','41%','39%']
 					const teng = gan[Math.floor(Math.random() * gan.length)]
-					frhan.sendMessage(from, 'Pertanyaan : Cek Ganteng Bang *'+ganteng+'*\n\nJawaban : '+ teng +'', text, { quoted: mek })
+					frhan.sendMessage(from, 'Pertanyaan: Cek Ganteng Kak *'+ganteng+'*\n\nJawaban: '+ teng +'', text, { quoted: mek })
 					break
 				case 'cantikcek':
 				case 'cekcantik':
@@ -1379,12 +1378,12 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					if (args.length < 1) return reply('Yg Mau dicek Siapa Kak??')
 					const can =['10% banyak" perawatan ya kak:v\nCanda Perawatan:v','30% Semangat Kaka Merawat Dirinya><','20% Semangat Ya Kaka👍','40% Wahh Kaka><','50% kaka cantik deh><','60% Hai Cantik🐊','70% Hai Ukhty🐊','62% Kakak Cantik><','74% Kakak ni cantik deh><','83% Love You Kakak><','97% Assalamualaikum Ukhty🐊','100% Kakak Pake Susuk ya??:v','29% Semangat Kakak:)','94% Hai Cantik><','75% Hai Kakak Cantik','82% wihh Kakak Pasti Sering Perawatan kan??','41% Semangat:)','39% Lebih Semangat🐊']
 					const tik = can[Math.floor(Math.random() * can.length)]
-					frhan.sendMessage(from, 'Pertanyaan : Cantik Cek Kakak *'+cantik+'*\n\nPersen Kecantikan : '+ tik +'', text, { quoted: mek })
+					frhan.sendMessage(from, 'Pertanyaan : Cantik Cek Kakak *'+cantik+'*\n\nPersen Kecantikan: '+ tik +'', text, { quoted: mek })
 					break
 				  case 'ownergrup':
 				  frhan.updatePresence(from, Presence.composing) 
 				  options = {
-				  text: `Owner Group ini adalah : wa.me/${from.split("-")[0]}`,
+				  text: `Owner Group ini adalah: wa.me/${from.split("-")[0]}`,
 				  contextInfo: { mentionedJid: [from] }
 				  }
 				  frhan.sendMessage(from, options, text, { quoted: mek } )
@@ -1573,13 +1572,13 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					const pesan = body.slice(8)
 					if (pesan.length > 300) return frhan.sendMessage(from, 'Maaf Teks Terlalu Panjang, Maksimal 300 Teks', text, {quoted: mek})
 					var nomor = mek.participant
-					const teks1 = `*[REPORT]*\nNomor : @${nomor.split("@s.whatsapp.net")[0]}\nPesan : ${pesan}`
+					const teks1 = `*[REPORT]*\n\nNomor: @${nomor.split("@s.whatsapp.net")[0]}\nPesan: ${pesan}`
 					var options = {
 					text: teks1,
 					contextInfo: {mentionedJid: [nomor]},
 					}
 					frhan.sendMessage(`${OwnerNumber}@s.whatsapp.net`, options, text, {quoted: mek})
-					reply('Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi.')
+					reply('Masalah telah di laporkan ke owner BOT\nLaporan palsu atau main-main tidak akan ditanggapi')
 				break
 			case 'memeindo':
 				if (isBanned) return reply(mess.only.benned)    
@@ -3143,7 +3142,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						teks += `╠➥ @${mem.jid.split('@')[0]} wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions(`╔═══✪ Tag By *${pushname2}* ✪══`+ teks +'╚═══〘 FXC7 BOT 〙═══', members_id, true)
+					mentions(`╔═══✪ Tag By *${pushname2}* ✪══`+ teks +'╚═══〘 💖 Neko BOT 💖🔙 〙═══', members_id, true)
 					break
 			    case 'mentionall':
 			    if (isBanned) return reply(mess.only.benned)    
